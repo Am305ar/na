@@ -87,14 +87,14 @@ cd $HOME/omar
 while(true) do
 rm -fr ../.telegram-cli
 screen -S omar -X kill
-screen -S omar ./omar
+screen -S omar ./Eqap
 done
 ]])
 Run_SM:close()
 io.popen("mkdir Files")
 os.execute('chmod +x tg')
 os.execute('chmod +x NG')
-os.execute('chmod +x omar')
+os.execute('chmod +x Eqap')
 os.execute('./NG')
 Status = true
 else   
@@ -2740,9 +2740,9 @@ end
 if text == 'السورس' or text == 'سورس' then
 Text = [[
 ⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤   
-[Div source ](http://t.me/spppn) 
+[✾┆eqab](http://t.me/r03_1) 
  
-[ source](http://t.me/botkay) 
+[✾┆eqab source](http://t.me/eqabsource) 
 ⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤
 ]]
 send(msg.chat_id_, msg.id_,Text)
@@ -7654,16 +7654,16 @@ redis:sadd(bot_id.."makal:bots", text)
 return false end
 end
 if text == 'السورس' or text == 'سورس' then
-  Text = [[
-  ⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤   
-  [Div source ](http://t.me/spppn) 
-   
-  [ source](http://t.me/botkay) 
-  ⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤
-  ]]
-  send(msg.chat_id_, msg.id_,Text)
-  return false
-  end
+Text = [[
+⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤   
+[✾┆eqab](http://t.me/r03_1) 
+ 
+[✾┆eqab source](http://t.me/eqabsource) 
+⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤
+]]
+send(msg.chat_id_, msg.id_,Text)
+return false
+end
 if text == 'مقالات' then
 
 local list = redis:smembers(bot_id.."makal:bots")
@@ -9460,7 +9460,7 @@ local Teext =[[
 • م4 => اوامر Commander
 • م C => اوامر Carbon 
  ━━━━━━━━
-Carbon - ]].. UserName_Dev..[[
+@BOTKAY ]][[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
