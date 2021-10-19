@@ -9460,8 +9460,8 @@ local Teext =[[
 • م4 => اوامر Commander
 • م C => اوامر Carbon 
  ━━━━━━━━
-@BOTKAY ]][[
-]]
+@BOTKAY ]]
+
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
